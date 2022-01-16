@@ -1,0 +1,706 @@
+* {
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*fonts*/
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('fonts/ofont.ru_pt_sans.woff2') format('woff2'),
+         url('fonts/ofont.ru_pt_sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'post_no_bills_jaffnabold';
+    src: url('fonts/postnobillsjaffna-bold-webfont.woff2') format('woff2'),
+         url('fonts/postnobillsjaffna-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('fonts/ofont.ru_playfair_display.woff2') format('woff2'),
+         url('fonts/ofont.ru_playfair_display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/ofont.ru_playfair_display_1.woff2') format('woff2'),
+         url('fonts/ofont.ru_playfair_display_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('fonts/ofont.ru_pt_sans_1.woff2') format('woff2'),
+         url('fonts/ofont.ru_pt_sans_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    width: 1920px;
+    overflow-x: hidden;
+}
+
+/*header*/
+
+    /*header-top*/
+
+.header-top-container {
+    background-color: #000;
+    align-items: center;
+    padding-top: 14px;
+    padding-right: 405px;
+    padding-bottom: 14px;
+    padding-left: 405px;
+}
+ 
+.header-top-list {
+    display: inline-flex;
+    background-image: url('img/phone.png');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    align-items: center;
+    margin-right: 600px;
+}
+
+.header-top-item {
+    align-items: center;
+}
+
+.header-top-item:not(:last-child) {
+    border-right: 1px solid #969696;
+    padding-right: 14px;
+}
+
+.header-top-item:not(:first-child) {
+    margin-left: 14px;
+}
+
+.header-top-item-text {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 12px;
+    color: #969696;
+    transition: 500ms;
+}
+
+.header-top-item-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.header-top-reg {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 12px;
+    color: #969696;
+    background-image: url('img/reg.png');
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    transition: 500ms;
+    padding-left: 20px;
+    margin-right: -100px;
+}
+
+.header-top-reg:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+    /*header-main*/
+
+.header-main-container {
+    width: 1920px;
+    height: 80px;
+    display: inline-flex;
+    background-color: #0f0f0f;
+    align-items: center;
+    padding: 15px 405px;
+}
+
+.header-main-title {
+    font-family: 'post_no_bills_jaffnabold';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 489px;
+    margin-left: 0;
+}
+
+.header-main-list {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-main-item:nth-child(2) {
+    width: 160px;
+}
+
+.header-main-item:nth-child(3) {
+    margin-right: 20px;
+}
+
+.header-main-item-cart {
+    margin-right: 40px;
+}
+
+.header-main-item-link {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #969696;
+    text-transform: uppercase;
+    padding: 31px 20px;
+    transition: 500ms;
+}
+
+.header-main-item-link:hover {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.header-main-item-cart , .header-main-item-search {
+    transition: 500ms;
+}
+
+.header-main-item-cart:hover , .header-main-item-search:hover {
+    transform: scale(1.1);
+}
+
+/*main*/
+
+    /*first screen*/
+
+.main-first_screen {
+    height: 810px;
+    background-image: url('img/first-screen-bg.jpg');
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    padding-top: 160px;
+    padding-right: 595px;
+    padding-bottom: 154px;
+    padding-left: 595px;
+}
+
+.main-first_screen-logo-block {
+    width: 320px;
+    height: 320px;
+    border: 4px solid #fff;
+    text-align: center;
+    padding-top: 93px;
+    padding-right: 68px;
+    padding-bottom: 94px;
+    padding-left: 67px;
+    margin-bottom: 80px;
+}
+
+.main-first_screen-heading {
+    font-family: 'post_no_bills_jaffnabold';
+    font-weight: normal;
+    font-size: 64px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main-first_screen-logo-description {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 22px;
+    color: #fff;
+    border-top: 2px solid #fff;
+    padding-top: 7px;
+}
+
+.main-first_screen-description {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+    /*collections*/
+
+.main-collections-first_block {
+    display: inline-flex;
+}
+
+.main-collections-seasons21 {
+    width: 1040px;
+    height: 730px;
+    background-color: #000;
+    align-items: center;
+    text-align: center;
+    padding: 93px 80px;
+}
+
+.main-collections-seasons21-heading {
+    font-family: 'playfair_displaybold';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.main-collections-seasons21-heading-border {
+    width: 120px;
+    height: 0;
+    border: 1px solid #fff;
+    margin-bottom: 50px;
+}
+
+.main-collections-seasons21-list {
+    display: inline-flex;
+    padding-inline-start: 0px;
+}
+
+.main-collections-seasons21-item {
+    text-align: left;
+}
+
+.main-collections-seasons21-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.main-collections-seasons21-item-link-container {
+    background-color: #191B1C;
+    padding: 55px 22px;
+    margin-bottom: 25px;
+}
+
+.main-collections-seasons21-item-link-img {
+    transition: 500ms;
+}
+
+.main-collections-seasons21-item-link-img:hover {
+    transform: scale(1.15);
+}
+
+.main-collections-seasons21-item-heading {
+    font-family: 'playfair_displayregular';
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-collections-seasons21-item-price {
+    font-family: 'playfair_displaybold';
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-collections-new {
+    width: 880px;
+    height: 730px;
+    background-image: url('img/new-bg.jpg');
+    align-items: center;
+    text-align: center;
+    padding-top: 484px;
+    padding-right: 252px;
+    padding-bottom: 100px;
+    padding-left: 252px;
+}
+
+.main-collections-new-heading {
+    font-family: 'playfair_displaybold';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.main-collections-new-heading-border {
+    width: 120px;
+    height: 0;
+    border: 1px solid #fff;
+    margin-bottom: 42px;
+}
+
+.main-collections-new-btn {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #fff;
+    transition: 300ms;
+    padding: 12px 28px;
+}
+
+.main-collections-new-btn:hover {
+    border-color: #ff9900;
+    color: #ff9900;
+    letter-spacing: 1px;
+    transform: scale(1.15);
+}
+
+.main-collections-2018 {
+    width: 1920px;
+    height: 600px;
+    text-align: center;
+    background-color: #000;
+    background-image: url('img/2018-bg.jpg');
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-right: 284px;
+    padding-bottom: 100px;
+    padding-left: 1165px;
+}
+
+.main-collections-2018-heading {
+    font-family: 'playfair_displayregular';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-collections-2018-heading-border {
+    width: 120px;
+    height: 0;
+    border: 1px solid #fff;
+    margin-bottom: 40px;
+}
+
+.main-collections-2018-description {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 73px;
+}
+
+.main-collections-2018-btn {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    transition: 300ms;
+    padding: 12px 28px;
+}
+
+.main-collections-2018-btn:hover {
+    border-color: #ff9900;
+    color: #ff9900;
+    letter-spacing: 1px;
+    transform: scale(1.15);
+}
+
+    /*supply*/
+
+.main-collections-supply {
+    background-color: #000;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+    padding-right: 405px;
+    padding-bottom: 150px;
+    padding-left: 405px;
+}
+
+.main-collections-supply-heading {
+    font-family: 'playfair_displaybold';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-collections-supply-heading-border {
+    width: 120px;
+    height: 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 81px;
+}
+
+.main-collections-supply-list {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    padding-left: 0;
+}
+
+.main-collections-supply-item {
+    width: 260px;
+    margin-right: 23px;
+    margin-left: 0;
+}
+
+.main-collections-supply-item:nth-child(-n+4) {
+    margin-bottom: 40px;
+}
+
+.main-collections-supply-item:nth-child(4n) {
+    margin-right: 0 !important;
+}
+
+.main-collections-supply-item-link-container {
+    background-color: #191B1C;
+    padding: 55px 22px;
+    margin-bottom: 25px;
+}
+
+.main-collections-supply-item-link-img {
+    transition: 500ms;
+}
+
+.main-collections-supply-item-link-img:hover {
+    transform: scale(1.15);
+}
+
+.main-collections-supply-item-heading {
+    font-family: 'playfair_displayregular';
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-collections-supply-item-price {
+    font-family: 'playfair_displaybold';
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+}
+
+    /*brands*/
+
+.main-collections-brands {
+    width: 100%;
+    height: 362px;
+    background-color: #0f0f0f;
+    text-align: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-right: 405px;
+    padding-bottom: 80px;
+    padding-left: 405px;
+}
+
+.main-collections-brands-heading {
+    font-family: 'playfair_displaybold';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-collections-brands-heading-border {
+    width: 120px;
+    height: 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+}
+
+.main-collections-brands-list {
+    display: flex;
+    margin-left: -40px;
+}
+
+.main-collections-brands-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*footer*/
+
+    /*main*/
+
+.footer {
+    width: 100%;
+}
+
+.footer-main-container {
+    width: 100%;
+    height: 400px;
+    background-image: url('img/footer-main-bg.png');
+    background-repeat: no-repeat;
+    display: inline-flex;
+    padding-top: 80px;
+    padding-right: 405px;
+    padding-bottom: 101px;
+    padding-left: 405px;
+}
+
+.footer-main-about-container {
+    width: 670px;
+    margin-right: 31px;
+}
+
+.footer-main-about-heading {
+    font-family: 'playfair_displayregular';
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer-main-about-description {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    line-height: 21px;
+}
+
+.footer-main-categories-container {
+    margin-right: 92px;
+}
+
+.footer-main-categories-heading {
+    font-family: 'playfair_displayregular';
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.footer-main-categories-list {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    padding-left: 0;
+}
+
+.footer-main-categories-item {
+    margin-left: 0;
+}
+
+.footer-main-categories-item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.footer-main-categories-item:nth-child(-n+3) {
+    margin-bottom: 40px;
+}
+
+.footer-main-categories-item-link {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0f0f0f;
+    transition: 500ms;
+    padding: 10px 20px;
+}
+
+.footer-main-categories-item-link:hover {
+    color: #ff9900;
+}
+
+.footer-main-mailing-heading {
+    font-family: 'playfair_displayregular';
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.footer-main-mailing-description {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 37px;
+}
+
+.footer-main-mailing-form {
+    width: 350px;
+    display: inline-flex;
+}
+
+.footer-main-mailing-form-input {
+    width: 210px;
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #969696;
+    background: rgba(255, 255, 255, 0.4);
+    outline: none;
+    border: none;
+    padding-top: 10px;
+    padding-right: 124px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+}
+
+.footer-main-mailing-form-input::placeholder {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #969696;
+}
+
+.footer-main-mailing-form-btn {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #0f0f0f;
+    border: none;
+    transition: 500ms;
+    padding: 10px 20px;
+}
+
+.footer-main-mailing-form-btn:hover {
+    color: #ff9900;
+}
+
+    /*footer-bottom*/
+
+.footer-bottom-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0f0f;
+}
+
+.footer-bottom-description {
+    font-family: 'pt_sansregular';
+    font-weight: normal;
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+.footer-bottom-link {
+    font-family: 'pt_sansbold';
+    font-weight: normal;
+    font-size: 12px;
+    color: #d0d0d0;
+    text-decoration: underline;
+}
